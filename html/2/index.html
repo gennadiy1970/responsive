@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive vs Adaptive</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+      crossorigin="anonymous"
+    />
+    <base
+      href="https://gennadiy1970.github.io/responsive/html/2/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.0.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Responsive</h2>
+      <h4>Проблема мобильных браузеров</h4>
+
+      <div>
+        <a href="https://codepen.io/Gorbulin/pen/gjmdzg">Responsive CSS</a>
+      </div>
+      <p>
+        Размер экрана десктопа очевидно больше размера экрана мобильного
+        устройства.
+      </p>
+      <p>
+        Можно изменять масштаб десктопного сайта, подгоняя к размеру мобильного
+        экрана, но тогда текст будет нечитабельный.
+      </p>
+      <p>
+        Можно оставить текст читабельным, но использовать scroll для прокрутки
+        текста, что также не очень удобно.
+      </p>
+      <p>Существует два способа создать сайт под мобильный экран.</p>
+      <ol>
+        <li>
+          создать CSS правила с ширинами блоков в % от ширины экрана
+          <span class="comment">устаревший способ "резиновая верстка"</span>
+        </li>
+        <li>
+          создать несколько CSS правил с фиксированной шириной
+          <span class="comment">(и прочее) </span> под разные ширины экрана с
+          помощью медиаправил
+        </li>
+        <li>
+          совместить первый и второй способы: задать ширину блоков в % и
+          использовать медиаправила для изменеия расположения и размеров блоков
+        </li>
+      </ol>
+      <h4>Пример макета для различных устройств.</h4>
+      <div><img src="../../img/psd.jpg" alt="макет" width="940" /></div>
+    </div>
+    <a class="back" href="../../index.html" target="_self">back</a>
+    <a class="next" href="../3/index.html" target="_self">next</a>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Viewport</title>
+    <base href="https://gennadiy1970.github.io/responsive/html/3/index.html" target="_blank" rel="noopener noreferrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Viewport meta tag</h2>
+        <p><a href="../viewport_example.html">Пример работы viewport</a></p>
+        <ul>
+            <li>
+                <p>Тег &lt;meta name="viewport"&gt; создан компанией Apple для iPhone. Другие браузеры также внедрили у себя
+                    этот тег со схожим поведением</p>
+            </li>
+            <li>
+                <p>Официального стандарта пока не существует. Есть черновик спецификации viewport:
+                    <a href="https://drafts.csswg.org/css-device-adapt/#viewport-meta">здесь.</a>
+                </p>
+            </li>
+            <li>
+                <p>Предназначен для изменения размера окна просмотра макета страницы. </p>
+            </li>
+            <li>
+                <p>Перевод хорошей статьи:
+                    <a href="http://frontender.com.ua/mobile-web/wtf-viewport/.com/">здесь.</a>
+                </p>
+            </li>
+            <li>
+                <p>Код <pre><kbd>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                </kbd></pre>
+                    означает, что браузер (возможно) отобразит ширину страницы по ширине своего экрана. Поэтому, если этот
+                    экран имеет ширину 320 пикселей, окно браузера будет иметь ширину 320 пикселей, а не уменьшаться и отображать
+                    960 пикселей (или что-то еще, что делает это устройство по умолчанию, вместо ответного метатега).
+                </p>
+            </li>
+            <li>
+                <p>Примечание. Не используйте отзывчивый метатег, если ваш сайт специально не разработан, чтобы быть отзывчивым
+                    и хорошо работать в этом размере, так как это ухудшит работу.</p>
+            </li>
+        </ul>
+        <h4>Viewport: свойства</h4>
+        <ol>
+            <li>width</li>
+            <li>height</li>
+            <li>initial-scale</li>
+            <li>minimum-scale</li>
+            <li>maximum-scale</li>
+            <li>user-scalable</li>
+        </ol>
+        <div class="gallery">
+            <div class="img-wrp">
+                <img src="../../img/mobile_layoutviewport.jpg" alt="">
+            </div>
+            <div class="img-wrp">
+                <img src="../../img/mobile_layoutviewport_la.jpg" alt="">
+            </div>
+
+            <!-- <div class="img-wrp">
+                <img src="../img/mobile_screen.jpg" alt="">
+            </div> -->
+            <div class="img-wrp">
+                <img src="../../img/mobile_viewportzoomedout.jpg" alt="">
+            </div>
+            <div class="img-wrp">
+                <img src="../../img/mobile_viewportzoomedout_la.jpg" alt="">
+            </div>
+            <!-- <div class="img-wrp">
+                <img src="../img/mobile_visualviewport.jpg" alt="">
+            </div> -->
+            <div class="img-wrp">
+                <img src="../../img/mobile_mediaqueries.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <a class="back" href=".././index.html" target="_self">back</a>
+    <a class="next" href="../4/index.html" target="_self">next</a>
+</body>
+
+</html>

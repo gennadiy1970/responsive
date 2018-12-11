@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive Images</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+      crossorigin="anonymous"
+    />
+    <base
+      href="https://gennadiy1970.github.io/responsive/html/8/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.7.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Responsive Images</h2>
+      <section>
+        <h3>Качество</h3>
+        <h4>Растр и вектор 400% zoom</h4>
+        <div class="img-box">
+          <figure>
+            <img src="../../img/400percentRastr.png" alt="400percentRastr" />
+            <figcaption>Растр PNG</figcaption>
+          </figure>
+          <figure>
+            <img src="../../img/400percentVector.png" alt="400percentVector" />
+            <figcaption>Вектор SVG</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section>
+        <h3>Цена загрузки изображения</h3>
+        <div class="img-wrp"><img src="../../img/sea.jpg" alt="" /></div>
+        <table>
+          <caption>
+            <h4>Растр: размеры jpg файла после изменения размера</h4>
+          </caption>
+          <tr>
+            <th>размер изображения</th>
+            <th>% сжатия</th>
+            <th>размер файла, kb</th>
+            <th>цена, коп</th>
+            <th>цена в %</th>
+          </tr>
+          <tr>
+            <td>1920x1080</td>
+            <td>0%</td>
+            <!--
+              200 000кб  7грн
+                  976кб - x
+            -->
+            <td>976</td>
+            <td>3.4</td>
+            <!--
+              0.03416 - 100%
+              0.013895 - x
+            -->
+            <td>100.00%</td>
+          </tr>
+          <tr>
+            <td>960x540</td>
+            <td>50%</td>
+            <td>397</td>
+            <td>1.4</td>
+            <td>40.0%</td>
+          </tr>
+          <tr>
+            <td>768x432</td>
+            <td>60%</td>
+            <td>263</td>
+            <td>0.9</td>
+            <td>27.0%</td>
+          </tr>
+          <tr>
+            <td>480x270</td>
+            <td>75%</td>
+            <td>114</td>
+            <td>0.4</td>
+            <td>11.5%</td>
+          </tr>
+          <tr>
+            <td>320x180</td>
+            <td>84%</td>
+            <td>54</td>
+            <td>0.2</td>
+            <td>5.5%</td>
+          </tr>
+        </table>
+
+        <p>
+          Можно сделать вывод, что стоит загружать изображение наиболее
+          подходящее по размеру и не загружать другие изображения.
+        </p>
+        <p class="comment">
+          Расчет цены взят по этой
+          <a
+            href="https://www.vodafone.ua/ru/privatnim-klientam/rates/vodafone-supernet-start"
+            >ссылке</a
+          >
+          как 200Мб/7грн
+        </p>
+      </section>
+      <section>
+        <h3>
+          Искусcтво обрезки <span class="overline">деревьев</span> фотографий
+        </h3>
+        <p>Что обрезать - горизонталь или вертикаль?</p>
+        <p class="red">Art direction problem!</p>
+        <div class="bg-full"></div>
+        <div class="bg-cat"></div>
+      </section>
+      <!---->
+      <section>
+        <h3>Форматы изображений</h3>
+        <div class="img-box">
+          <figure class="multi">
+            <img src="../../img/cicle.png" alt="PNG" />
+            <figcaption>PNG</figcaption>
+          </figure>
+          <figure class="multi">
+            <img src="../../img/cicle.jpg" alt="JPG" />
+            <figcaption>JPG</figcaption>
+          </figure>
+          <figure class="multi">
+            <img src="../../img/cicle.gif" alt="GIF" />
+            <figcaption>GIF</figcaption>
+          </figure>
+          <figure class="multi">
+            <img src="../../img/cicle.webp" alt="WebP" />
+            <figcaption>WebP</figcaption>
+          </figure>
+          <figure class="multi">
+            <img src="../../img/cicle.jxr" alt="JXR" />
+            <figcaption>JXR</figcaption>
+          </figure>
+          <figure class="multi">
+            <img src="../../img/cicle.svg" alt="SVG" />
+            <figcaption>SVG</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!---->
+      <section>
+        <h3>4 причины использовать Responsive Images</h3>
+        <ol>
+          <li>
+            Необходимость изменения размеров
+            <span class="red">size</span> изображения
+          </li>
+          <li>
+            Оптимизировать выбор загрузки изображения в зависимомсти от
+            <span class="red">dpi</span> экрана устройства
+          </li>
+          <li>
+            Обрезание части изображения (art direction problem)
+            <span class="red">art</span> в зависимости от ширины экрана
+          </li>
+          <li>
+            Выбор и загрузка разных форматов
+            <span class="red">mime</span> файлов для разных браузеров в
+            зависимости от поддержки браузера
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h3>Синтаксис</h3>
+        <h4>
+          img <span class="red">src</span> &amp; <span class="red">srcset</span>
+        </h4>
+        <div class="problem">
+          <span class="size">size</span> <span class="dpi active">dpi</span>
+          <span class="art">art</span> <span class="mime">mime</span>
+        </div>
+        <p>Изображения с фиксированной шириной для экранов с различным dpi</p>
+        <p>
+          Принцип расчета размеров изображения:<br />
+          <span class="comment">ширина * K dpi, длина * K dpi</span>
+        </p>
+        <pre>Пример: 
+            K dpi = 1   <span class="comment">// 800x600.jpg</span>,
+            K dpi = 1.5 <span class="comment">// 1200x900.jpg</span>,
+            K dpi = 2   <span class="comment">// 1600x1200.jpg</span>,
+                 </pre>
+        <div>
+          <img src="../../img/src.png" alt="src" />
+          <img src="../../img/1x.png" alt="1x" />
+          <img src="../../img/2x.png" alt="2x" />
+        </div>
+        <p>Синтаксис для тега img:</p>
+        <ul>
+          <li><span class="red">src</span> для изображения по умолчанию</li>
+          <li>
+            <span class="red">srcset</span> задание правил отбора на основе (K
+            dpi) <span class="comment">// через запятую</span>
+          </li>
+        </ul>
+        <pre><kbd>
+&lt;img src="sea_800x600.jpg"
+     srcset="sea_1200x900.jpg 1.5x, 
+             sea_1600x1200.jpg 2x"
+     width="800" 
+     alt="sea"
+&gt;
+            </kbd></pre>
+        <div class="problem">
+          <span class="size active">size</span> <span class="dpi">dpi</span>
+          <span class="art">art</span> <span class="mime">mime</span>
+        </div>
+        <p>Изображения с переменной шириной экранов</p>
+        <p class="comment">
+          // медиаусловия атрибута <span class="red">sizes</span>
+        </p>
+        <p>Синтаксис для тега img:</p>
+        <ul>
+          <li><span class="red">src</span> для изображения по умолчанию</li>
+          <li>
+            <span class="red">sizes</span> задание правил отбора на основе
+            ширины экрана
+          </li>
+          <li>
+            <span class="red">srcset</span> список изображений с шириной,
+            которая должна попасть под правило отбора (<span class="red"
+              >w</span
+            >
+            - ширина экрана) <span class="comment">// через запятую</span>
+          </li>
+        </ul>
+        <pre><kbd>
+&lt;img sizes="(max-width: 480px) 100vw,
+	    (max-width: 800px) 50vw,
+	     calc(33vw - 100px)"
+     srcset="sea-200.jpg 200w,
+	     sea-400.jpg 400w,
+	     sea-800.jpg 800w,
+	     sea-1600.jpg 1600w"
+     src="sea-400.jpg" alt="sea"
+&gt;
+</kbd></pre>
+        <p>
+          Браузер может выбирать любой ресурс, который его алгоритмы считают
+          нужным. Можно предпалагать, что браузер будет выбирать таким образом:
+        </p>
+        <pre class="comment sml">
+    для экрана в 320px подходит правило (max-width: 480px)
+    и изображение должно поместиться в 100vw (в 320px)
+    из имеющихся файлов подходящит sea-400.jpg под 400w
+    и этот файл будет сжат браузером до 320px
+
+
+    для экрана в 640px подходит правило (max-width: 800px)
+    и изображение должно поместиться в 50vw (в 320px)
+    итого подходит тот же файл sea-400.jpg под 400w
+    и этот файл будет сжат браузером до 320px
+
+</pre
+        >
+      </section>
+      <section>
+        <h4>Тег picture</h4>
+        <p>
+          Тег picture это контейнер для одного или более элементов
+          &lt;source&gt; и одного элемента &lt;img&gt;
+        </p>
+        <p>
+          Главное отличие от img - наличие хорошо описанных в
+          <a
+            href="https://html.spec.whatwg.org/multipage/images.html#select-an-image-source"
+            >спецификации</a
+          >
+          правил отбора изображений
+        </p>
+        <p>
+          Принцип работы - если условия отбора совпали, то подгружается первый
+          подходящий файл.
+        </p>
+        <p>
+          Если условия отбора не подошли, то загружается изображение из
+          обязательного тега &lt;img&gt;
+        </p>
+        <p>Атрибуты тега source:</p>
+        <ul>
+          <li><span class="red">srcset</span> ссылка на файл изображения</li>
+          <li>
+            <span class="red">media</span> задание правила отбора (ширина, dpi)
+          </li>
+          <li>
+            <span class="red">type</span> задание правила отбора по типу данных
+          </li>
+        </ul>
+        <div class="problem">
+          <span class="size active">size</span> <span class="dpi">dpi</span>
+          <span class="art">art</span> <span class="mime">mime</span>
+        </div>
+        <pre><kbd>
+&lt;picture&gt;
+    &lt;source media="(min-width: 720px)"
+            srcset="large.jpg"&gt;
+    &lt;source media="(min-width: 512px)"
+            srcset="middle.jpg"&gt;
+    &lt;img    src="small.jpg"
+            alt="sea"&gt;
+&lt;/picture&gt;
+            </kbd></pre>
+        <div class="problem">
+          <span class="size">size</span> <span class="dpi">dpi</span>
+          <span class="art">art</span> <span class="mime active">mime</span>
+        </div>
+        <pre><kbd>
+&lt;picture&gt;
+    &lt;source type="image/webp"
+            srcset="sea.webp"&gt;
+    &lt;source type="image/vnd.ms-photo"
+            srcset="sea.jpxr"&gt;
+    &lt;img src="sea.jpg"
+        alt="sea"&gt;
+&lt;/picture&gt;
+</kbd></pre>
+
+        <div class="problem">
+          <span class="size">size</span> <span class="dpi">dpi</span>
+          <span class="art active">art</span> <span class="mime">mime</span>
+        </div>
+        <pre><kbd>
+&lt;picture&gt;
+    &lt;source
+        media="(min-width: 1024px)"
+        srcset="fullImage.jpg"&gt;
+    &lt;img
+        src="cutImage.jpg"
+        alt="sea"&gt;
+&lt;/picture&gt; 
+</kbd></pre>
+      </section>
+      <section>
+        <h4>Вместо выводов</h4>
+        <p>
+          Для этого сайта были использованы идеи с
+          <a href="https://dev.opera.com/articles/responsive-images/">сайта</a>,
+          который рекомендуется прочитать для закрепления материала
+        </p>
+      </section>
+    </div>
+    <a class="back" href="../../index.html" target="_self">back</a>
+    <!-- <a class="next" href="./index.7.html" target="_self">next</a> -->
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-wrp {
+    width: 48%;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+
+.img-wrp img {
+    text-align: center;
+}
+
+a {
+    color: salmon;
+}
+
+li li {
+    font-size: 20px;
+}

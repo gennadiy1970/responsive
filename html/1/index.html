@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>@media</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+      crossorigin="anonymous"
+    />
+    <base
+      href="https://gennadiy1970.github.io/responsive/html/1/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.4.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>@media</h2>
+      <p>
+        @media нужны для правильной работаты web aplication на всех устройствах
+      </p>
+      <h4>@media необходимо когда требуется применить разные css стили для:</h4>
+      <ul>
+        <li>
+          устройств с разными типами отображения:
+          <ul>
+            <li>@media screen { ... }</li>
+            <li>@media print { ... }</li>
+            <li>@media speech { ... }</li>
+            <li>@media only screen { ... }</li>
+            <li>@media screen, print { ... }</li>
+          </ul>
+        </li>
+        <li>
+          с разными характеристиками устройства:
+          <ul>
+            <li>
+              @media (color) { ... }
+              <span class="comment">// только для цветных экранов</span>
+            </li>
+            <li>
+              @media (monochrome) { ... }
+              <span class="comment">// только для монохромных экранов</span>
+            </li>
+            <li>
+              @media (aspect-ratio: 11/5) { ... }
+              <span class="comment"
+                >// для экранов с отношением сторон 11/5</span
+              >
+            </li>
+            <li>
+              @media (resolution: 150dpi) { ... }
+              <span class="comment">// для экранов со 150dpi</span>
+            </li>
+            <li>
+              @media (orientation: landscape) { ... }
+              <span class="comment"
+                >// для горизонтального положения экрана смартфона</span
+              >
+            </li>
+            <li>
+              @media (orientation: portrait) { ... }
+              <span class="comment"
+                >// для вертикального положения экрана смартфона</span
+              >
+            </li>
+            <li>
+              @media (max-width: 960px) { ... }
+              <sapn class="comment"
+                >// для окна браузера с шириной меньше 960px</sapn
+              >
+            </li>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          с определенным набором характеристк:
+          <ul>
+            <li>
+              <b class="red">and</b>
+              <code
+                ><kbd
+                  >@media (min-width: 30rem) and (orientation: landscape) { ...
+                  }</kbd
+                ></code
+              >
+            </li>
+            <li>
+              <b class="red">,</b>
+              <code
+                ><kbd
+                  >@media (min-width: 30rem) , screen and (orientation:
+                  landscape) { ... }</kbd
+                ></code
+              >
+            </li>
+            <li>
+              <b class="red">not</b>
+              <code><kbd>@media not print, screen { ... }</kbd></code>
+              <span class="comment"> // не для печати, а для экранов</span>
+              <a href="../media-print/index.html"
+                >Пример - просмотр печати с закоментированым и
+                раскомментированным медиаправилом</a
+              >
+            </li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Спецификация</h4>
+      <p>
+        Сыылка на спецификацию находится
+        <a href="https://www.w3.org/TR/css3-mediaqueries/">здесь</a>
+      </p>
+      <h4>Анимация и переходы</h4>
+      <p>
+        Между свойствами в разных медиаправилах происходят переходы и анимация
+        как и при обычных изменениях.
+        <a href="https://davidwalsh.name/animate-media-queries">Подробнее</a>
+      </p>
+      <div>
+        <a href="https://davidwalsh.name/demo/animate-media-queries.php"
+          >Пример</a
+        >
+      </div>
+    </div>
+    <a class="back" href="../../index.html" target="_self">back</a>
+    <a class="next" href="../2/index.html" target="_self">next</a>
+  </body>
+</html>

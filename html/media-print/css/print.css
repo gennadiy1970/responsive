@@ -1,0 +1,51 @@
+@media print {
+  @page {
+    size: auto;
+    margin: 0;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+  }
+  .wrapper {
+    padding: 0 1.8cm 0 1.5cm;
+  }
+  header,
+  nav,
+  footer,
+  video,
+  audio,
+  img,
+  object,
+  embed,
+  .sections {
+    display: none;
+  }
+
+  h1 {
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 14pt;
+    margin-top: 25px;
+  }
+  blockquote,
+  ul {
+    margin: 0;
+  }
+  p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+  p a[href^="http://"]:after, a[href^="https://"]:after {
+    content: " (" attr(href) ")";
+    color: #555;
+    font-style: italic;
+    font-weight: normal;
+  }
+}

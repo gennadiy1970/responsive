@@ -1,0 +1,11 @@
+a {
+    color: salmon;
+}
+
+li {
+    text-indent: 2rem;
+}
+
+li li {
+    font-size: 20px;
+}
